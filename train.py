@@ -27,7 +27,7 @@ class MovieDataset:
         
 
 class RecSysModel(tez.Model):
-    def __init(self, num_users, num_movies):
+    def __init__(self, num_users, num_movies):
         super().__init__()
         self.user_embed = nn.Embedding(num_users, 32)
         self.movie_embed = nn.Embedding(num_movies, 32)
